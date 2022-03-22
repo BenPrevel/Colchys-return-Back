@@ -15,19 +15,19 @@ public class Member {
 	private Long id;
 	
 	@NotNull
-	@Size(min = 3,max = 100)
+	@Size(min = 2,max = 100)
 	private String govFirstname;
 	
 	@NotNull
-	@Size(min = 3,max = 100)
+	@Size(min = 2,max = 100)
 	private String govLastname;
 	
 	@NotNull
-	@Size(min = 3,max = 100)
+	@Size(min = 2,max = 100)
 	private String role;
 	
 	@NotNull
-	@Size(min = 3,max = 100)
+	@Size(min = 2,max = 100)
 	private String ministry;
 	
 	public String getGovFirstname() {

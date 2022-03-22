@@ -35,7 +35,6 @@ public class MemberController {
 		// Create a member of the gov
 		@PostMapping
 		public Member create(@Valid @RequestBody MemberDto memberDto) {
-			System.out.println(memberDto.toString());
 			Member member = new Member();
 			
 			member.setGovFirstname(memberDto.getGovFirstname());

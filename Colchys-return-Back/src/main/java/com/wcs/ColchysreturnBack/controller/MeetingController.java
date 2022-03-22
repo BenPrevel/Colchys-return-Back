@@ -44,6 +44,8 @@ public class MeetingController {
 	@PostMapping
 	public Meeting create(@Valid @RequestBody MeetingDto meetingDto) {
 		
+		System.err.println();
+		
 		// get the role in the dto
 		Long memberId = meetingDto.getMemberId();
 		// check if the role exist

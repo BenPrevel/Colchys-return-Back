@@ -10,6 +10,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.validation.constraints.FutureOrPresent;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 @Entity
 public class Meeting {
@@ -19,9 +20,11 @@ public class Meeting {
 	private Long id;
 	
 	@NotNull
+	@Size(min = 2,max = 100)
 	private String firstname;
 	
 	@NotNull
+	@Size(min = 2,max = 100)
 	private String lastname;
 	
 	@NotNull
@@ -29,9 +32,11 @@ public class Meeting {
 	private LocalDateTime date;
 	
 	@NotNull
+	@Size(min = 2,max = 100)
 	private String subject;
 	
 	@NotNull
+	@Size(min = 2,max = 500)
 	private String description;
 	
 	  @ManyToOne
